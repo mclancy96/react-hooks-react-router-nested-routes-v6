@@ -6,31 +6,31 @@ import UserProfile from "./pages/UserProfile";
 import ErrorPage from "./pages/ErrorPage";
 
 const routes = [
-	{
-		path: "/",
-		element: <App />,
-		errorElement: <ErrorPage />,
-		children: [
-			{
-				path: "/",
-				element: <Home />,
-				children: [
-					{
-						path: "/profile/:id",
-						element: <UserProfile />,
-					},
-				],
-			},
-			{
-				path: "/about",
-				element: <About />,
-			},
-			{
-				path: "/login",
-				element: <Login />,
-			},
-		],
-	},
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+        children: [
+          {
+            path: "/profile/:id",
+            element: <UserProfile />,
+          },
+        ],
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
+      },
+    ],
+  },
 ];
 
 export default routes;
